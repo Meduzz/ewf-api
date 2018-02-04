@@ -1,8 +1,10 @@
 name := "ewf-api"
 
-version := "20180121"
+version := "20180204"
 
-scalaVersion := "2.11.12"
+scalaVersion := "2.12.4"
+
+crossScalaVersions := Seq("2.11.12", "2.12.4")
 
 organization := "se.chimps.ewf"
 

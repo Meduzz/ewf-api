@@ -15,7 +15,7 @@ trait ResponseBuilders {
 
 	def badRequest():HttpResponse = HttpResponse(400, Map(), Array())
 
-	def forbidden():HttpResponse = HttpResponse(401, Map(), Array())
+	def forbidden():HttpResponse = HttpResponse(403, Map(), Array())
 
 	def redirect(url:String):HttpResponse = HttpResponse(302, Map("Location" -> url), Array())
 }
